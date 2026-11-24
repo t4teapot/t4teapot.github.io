@@ -17,6 +17,14 @@
 		border-radius: 20px;
 		text-align: center;
 	}
+	div.halfcontainer {
+		display: flex;
+	}
+	div.halfitem {
+		flex: 1;
+		margin: 0;
+		padding: 0;
+	}
 	img {
 		margin: auto;
 		width: 31%;
@@ -32,13 +40,18 @@
 	}
 	img.icon {
 		border: 0px;
-		width: 6%;
+		width: 12%;
 		padding: 2%;
 	}
-	h1, p {
-		color: #bd2dac;
+	h1 {
+		color: #00D786;
+		text-shadow: 2px 1px 0px #007C50,
+			-2px -1px 0px #00F397;
 	}
 	p {
+		color: #00D786;
+		text-shadow: 1px 0.5px 0px #007C50,
+			-1px -0.5px 0px #00F397;
 		font-size: large;
 	}
 	</style>
@@ -49,16 +62,27 @@
 		<div>
 			<img class="title" src="stuff/teapot.png">
 		</div>
-		<div>
-			<a target="_blank" href="https://steamcommunity.com/id/t4teapot/"><img class="icon" src="stuff/steam.png"></a>
-			<a target="_blank" href="https://www.planetminecraft.com/member/oyu/"><img class="icon" src="stuff/minecraft.png"></a>
-			<a target="_blank" href="https://www.youtube.com/@t4teapot"><img class="icon" src="stuff/youtube.png"></a>
+		<div class="halfcontainer">
+			<div class="halfitem">
+				<h1>find my profiles:</h1>
+				<div>
+					<a target="_blank" href="https://steamcommunity.com/id/t4teapot/"><img class="icon" src="stuff/steam.png"></a>
+					<a target="_blank" href="https://www.planetminecraft.com/member/oyu/"><img class="icon" src="stuff/minecraft.png"></a>
+					<a target="_blank" href="https://www.youtube.com/@t4teapot"><img class="icon" src="stuff/youtube.png"></a>
+				</div>
+				<p>lee nicklen - parasite</p>
+				<audio controls loop>
+					<source src="stuff/parasite.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="halfitem">
+				<h1>~ games ~</h1>
+				<a target="_blank" href="games/colony/index.html"><h3>--> isometric colony survival (WIP) <--</h3></a>
+				<a target="_blank" href="games/scoundrel/index.html"><h3>--> silkicon scoundrel solitaire <--</h3></a>
+				<h1>~ downloads ~</h1>
+				<a href="transpridematerials.zip"><h3>--> TRANS PRIDE MATERIALS FOR SOURCE <--</h3></a>
+			</div>
 		</div>
-		<audio controls loop>
-			<source src="stuff/parasite.mp3" type="audio/mpeg">
-		</audio>
-		<h1>~ downloads ~</h1>
-		<a href="transpridematerials.zip"><h3>--> TRANS PRIDE MATERIALS FOR SOURCE <--</h3></a>
 		<h1>~ gmod maps ~</h1>
 		<div>
 			<a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3584561646"><img src="stuff/art/ttt_broadway0018.jpg"></a>
@@ -72,7 +96,7 @@
 			<a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3581510003"><img src="stuff/art/ttt_taineryard0013.jpg"></a>
 		</div>
 		<div>
-			<h1>~ minecraft packs ~</h1>
+			<h1>~ minecraft mods ~</h1>
 			<a target="_blank" href=""><img src="stuff/art/wip.jpg"></a>
 			<a target="_blank" href=""><img src="stuff/art/wip.jpg" class="bl"></a>
 			<a target="_blank" href=""><img src="stuff/art/wip.jpg"></a>
